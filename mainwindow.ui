@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Petrol Cost Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(31, 23, 23);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="cBcarmake">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding-Left: 5px;
+}
+
+QComboBox::placeholder {
+    color: rgb(252, 245, 237); 
+	font: italic 14pt &quot;Segoe UI&quot;;
+}
+
+QComboBox::down-arrow 
+{
+    image: url(:/resources/images/DownArrow.png);
+}
+
+QComboBox QAbstractItemView
+{
+background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding: 3px;
+}
+</string>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Choose Car Make...</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cBcarmodel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding-Left: 5px;
+}
+
+QComboBox::placeholder {
+    color: rgb(252, 245, 237); 
+	font: italic 14pt &quot;Segoe UI&quot;;
+}
+
+QComboBox::down-arrow 
+{
+    image: url(:/resources/images/DownArrow.png);
+}
+
+QComboBox QAbstractItemView
+{
+background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding: 3px;
+}
+</string>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Choose Car Model...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFuelType">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>40</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding-Left: 5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="sBdistance">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>140</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+    background-color: rgb(31, 23, 23);
+    color: rgb(252, 245, 237);
+    border: 2px solid rgb(206, 90, 103);
+    padding-left: 5px;
+    selection-background-color: transparent;  /* Remove selection background */
+    selection-color: rgb(252, 245, 237);;  /* Set selection text color if needed */
+}
+
+QSpinBox::up-button {
+    image: url(:/resources/images/UpArrow.png);
+}
+
+QSpinBox::down-button {
+    image: url(:/resources/images/DownArrow.png);
+}
+
+QSpinBox::up-arrow, QSpinBox::down-arrow {
+    border: 0;
+}
+
+QSpinBox::down-arrow:focus, QSpinBox::up-arrow:focus,
+QSpinBox::down-button:focus, QSpinBox::up-button:focus {
+    outline: none;  /* Remove focus border on buttons and arrows */
+}
+
+QSpinBox:focus {
+    border: 2px solid rgb(206, 90, 103);  /* Maintain the red border on focus */
+}</string>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>999999999</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDistance">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding-Left: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Distance in km :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPcost">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>140</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding-Left: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Petrol Cost :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPcostOutput">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>140</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(31, 23, 23);
+color: rgb(252, 245, 237);
+border: 2px solid rgb(206, 90, 103);
+padding-Left: 5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

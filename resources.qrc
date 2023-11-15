@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>images/DownArrow.png</file>
+        <file>images/UpArrow.png</file>
+        <file>data/Fuel_Consumption_2000-2022.csv</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
